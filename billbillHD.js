@@ -3,7 +3,7 @@ function：billbill画质解锁
 author:   skm_1229
 **************************************
 [rewrite_local]
-^http[s]?:\/\/.+bilibili.+((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)).*$ url script-response-body https://gitee.com/skm1229/scripts/blob/master/billbillHD.js
+^http[s]?:\/\/.+bilibili.+((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)).*$ url script-response-body https://raw.githubusercontent.com//skm1229/scripts/main/billbillHD.js
 [mitm]
 hostname = *.biliapi.*,*.bilibili.*
 
