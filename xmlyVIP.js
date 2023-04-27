@@ -27,114 +27,57 @@ hostname = 180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,1
 
 ************************/
 
-var List = ["body", "url",
-    "/mobile-playpage/playpage/tabs",
-    "v1/album/track/ts",
-    "business-vip-presale-mobile-web/page/ts",
-    "/product/promotion/v1/album/price/ts",
-    "mobile-user/v2/homePage/",
-    "vip/v1/recommand",
-    "/track/v3/baseInfo",
-    "/product/detail/v1/module/data/dynamic",
-    "/product/detail/v1/basicInfo/dynamic/ts",
-    "indexOf",
-    "\"url\":\"https://t.me/+gcEcUFPzQ2g5NTg9/163",
-    "replace",
-    "\"isAuthorized\":true",
-    "\"text\":\"正在使用SVIP加速通道",
-    "\"isFree\":true",
-    "\"sampleDuration\":99999",
-    "\"isSample\":true",
-    "\"isPaid\":false",
-    "\"vipPurchaseUrl\":\"https://t.me/+gcEcUFPzQ2g5NTg9",
-    "\"vipPurchaseText\":\"暂无更多信息",
-    "\"url\\\":\\\"https://t.me/+gcEcUFPzQ2g5NTg9\\",
-    "\"buttonContent\\\":\\\"暂无更多信息\\",
-    "userLogoPic\":\"https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg",
-    "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png",
-    "subtitle\":\"2999-09-09年",
-    "vipStatus\":2",
-    "nickName\":\"三坊七巷",
-    "parse",
-    "action",
-    "behaviors",
-    "data",
-    "https://t.me/+gcEcUFPzQ2g5NTg9/163",
-    "vipPurchaseText",
-    "暂无更多信息",
-    "labelSubTitle",
-    "暂无更多信息",
-    "labelText",
-    "暂无更多信息",
-    "stringify",
-    "nickname",
-    "三坊七巷",
-    "isVip",
-    "vipExpireTime",
-    "vipStatus",
-    "vipLevel",
-    "anchorVipInfo",
-    "vipInfo",
-    "level",
-    "mobileLargeLogo",
-    "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg",
-    "mobileSmallLogo",
-    "mobileMiddleLogo",
-    "modules",
-    "nickName",
-    "msg",
-    "暂无更多信息"];
-var Body = $response[List[0]];
-var Url = $request[List[1]];
-const URI1 = List[2];
-const URI2 = List[3];
-const URI3 = List[4];
-const URI4 = List[5];
-const URI5 = List[6];
-const URI6 = List[7];
-const URI7 = List[8];
-const URI8 = List[9];
-const URI9 = List[10];
-Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, List[17])["replace"](/"isFree":\w+/g, List[16])["replace"](/"text":"[^"]+/g, List[15])["replace"](/"isAuthorized":\w+/g, List[14])["replace"](/"url":"[^"]+/g, List[12]));
-Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isAuthorized":\w+/g, List[18]));
-Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18])["replace"](/"vipPurchaseText":"[^"]+/g, List[21])["replace"](/"vipPurchaseUrl":"[^"]+/g, List[20]));
-Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, List[23])["replace"](/"url\\":\\"[^"]+/g, List[22])["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18]));
-Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, List[28])["replace"](/vipStatus":\d/g, List[27])["replace"](/subtitle":"[^"]+/g, List[26])["replace"](/userLevelIcon":"[^"]+/g, List[25])["replace"](/userLogoPic":"[^"]+/g, List[24]));
+var _0x35d2d1 = $response["body"];
+var _0x250955 = $request["url"];
+const _0x4e5b40 = "/mobile-playpage/playpage/tabs";
+const _0x2310c1 = "v1/album/track/ts";
+const _0x3cc202 = "business-vip-presale-mobile-web/page/ts";
+const _0xb963fa = "/product/promotion/v1/album/price/ts";
+const _0x5c7fed = "mobile-user/v2/homePage/";
+const _0xc5dc45 = "vip/v1/recommand";
+const _0x4f91d4 = "/track/v3/baseInfo";
+const _0x502905 = "/product/detail/v1/module/data/dynamic";
+const _0x2ae674 = "/product/detail/v1/basicInfo/dynamic/ts";
+_0x250955["indexOf"](_0x4e5b40) != -1 && (_0x35d2d1 = _0x35d2d1["replace"](/"sampleDuration":\d/g, "\"sampleDuration\":99999")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"text":"[^"]+/g, "\"text\":\"âï¸èæ¬ç±ä¼äººåè´¹æä¾!è¯·ç¹å»æ­¤å¤è·åææ°JSãå½åæ¯02æ¯å·çº¿è·¯â¤ï¸")["replace"](/"isAuthorized":\w+/g, "\"isAuthorized\":true")["replace"](/"url":"[^"]+/g, "\"url\":\"https://t.me/WeiRenQAQ/163"));
+_0x250955["indexOf"](_0x2310c1) != -1 && (_0x35d2d1 = _0x35d2d1["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isAuthorized":\w+/g, "\"isSample\":true"));
+_0x250955["indexOf"](_0x502905) != -1 && (_0x35d2d1 = _0x35d2d1["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true")["replace"](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"ç¹å»æ·»å ä½èTGé¢é")["replace"](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/WeiRenQAQ"));
+_0x250955["indexOf"](_0x2ae674) != -1 && (_0x35d2d1 = _0x35d2d1["replace"](/"buttonContent\\":\\"[^"]+/g, "\"buttonContent\\\":\\\"â¤ï¸â¤ï¸ç¹å»æ·»å ä½èTGé¢éâ¤ï¸â¤ï¸\\")["replace"](/"url\\":\\"[^"]+/g, "\"url\\\":\\\"https://t.me/WeiRenQAQ\\")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true"));
+_0x250955["indexOf"](_0x3cc202) != -1 && (_0x35d2d1 = _0x35d2d1["replace"](/nickName":"[^"]+/g, "nickName\":\"by~ä¼äºº")["replace"](/vipStatus":\d/g, "vipStatus\":2")["replace"](/subtitle":"[^"]+/g, "subtitle\":\"2999-09-09åè´¹æä¾ç¦æ­¢è´©å")["replace"](/userLevelIcon":"[^"]+/g, "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png")["replace"](/userLogoPic":"[^"]+/g, "userLogoPic\":\"https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg"));
 
-varUser = JSON[List[29]](Body);
+var _0x1585e9 = JSON["parse"](_0x35d2d1);
 
-if (Url["indexOf"](URI4) != -1) {
-    const _0x4a0323 = "2|4|0|1|3"["split"]("|");
+if (_0x250955["indexOf"](_0xb963fa) != -1) {
+  const _0x1805c1 = "1|0|2|3|4"["split"]("|");
 
-    let _0x2d827e = 0;
-    User["data"]["behaviors"][0][List[30]][List[1]] = List[33];
-    User["data"]["behaviors"][0][List[34]] = List[35];
-    User["data"]["behaviors"][0][List[36]] = List[37];
-    User["data"]["behaviors"][0][List[38]] = List[39];
-    Body = JSON[List[40]](_0x2e9115);
+  let _0x5e34e1 = 0;
+  _0x1585e9["data"]["behaviors"][0]["action"]["url"] = "https://t.me/WeiRenQAQ/163";
+  _0x1585e9["data"]["behaviors"][0]["vipPurchaseText"] = "ç¹å»æ·»å ä½èTGé¢é";
+  _0x1585e9["data"]["behaviors"][0]["labelSubTitle"] = "æ·»å é¢éè·åææ°èæ¬ç»§ç»­çå¬ï¼ð";
+  _0x1585e9["data"]["behaviors"][0]["labelText"] = "è¯¥èæ¬å·²å¤±æ";
+  _0x35d2d1 = JSON["stringify"](_0x1585e9);
 }
 
-if (Url["indexOf"](URI5) != -1) {
-    const _0x4573f8 = "9|10|1|11|2|3|6|7|0|8|4|5"["split"]("|");
+if (_0x250955["indexOf"](_0x5c7fed) != -1) {
+  const _0x2ce4a3 = "10|5|2|9|0|7|4|6|1|8|3|11"["split"]("|");
 
-    let _0x366a73 = 0;
-    User["data"][List[41]] = List[42];
-    User["data"][List[43]] = true;
-    User["data"][List[44]] = 32493834549000;
-    User["data"][List[45]] = 2;
-    User["data"][List[46]] = 5;
-    User["data"][List[47]][List[43]] = true;
-    User["data"][List[48]][List[43]] = true;
-    User["data"][List[48]][List[49]] = 5;
-    User["data"][List[50]] = List[51];
-    User["data"][List[52]] = List[51];
-    User["data"][List[53]] = List[51];
-    Body = JSON[List[40]](_0x2e9115);
+  let _0x2b6f74 = 0;
+  _0x1585e9["data"]["nickname"] = "by~ä¼äºº";
+  _0x1585e9["data"]["isVip"] = true;
+  _0x1585e9["data"]["vipExpireTime"] = 32493834549000;
+  _0x1585e9["data"]["vipStatus"] = 2;
+  _0x1585e9["data"]["vipLevel"] = 5;
+  _0x1585e9["data"]["anchorVipInfo"]["isVip"] = true;
+  _0x1585e9["data"]["vipInfo"]["isVip"] = true;
+  _0x1585e9["data"]["vipInfo"]["level"] = 5;
+  _0x1585e9["data"]["mobileLargeLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+  _0x1585e9["data"]["mobileSmallLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+  _0x1585e9["data"]["mobileMiddleLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+  _0x35d2d1 = JSON["stringify"](_0x1585e9);
 }
 
-Url["indexOf"](URI6) != -1 && (deleteUser["data"][List[54]], User["data"][List[45]] = 2, User["data"][List[55]] = List[42], Body = JSON[List[40]](_0x2e9115));
-Url["indexOf"](URI7) != -1 && (_0x2e9115[List[56]] = List[57], Body = JSON[List[40]](_0x2e9115));
-const _0x50d395 = {
-    "body": Body
+_0x250955["indexOf"](_0xc5dc45) != -1 && (delete _0x1585e9["data"]["modules"], _0x1585e9["data"]["vipStatus"] = 2, _0x1585e9["data"]["nickName"] = "by~ä¼äºº", _0x35d2d1 = JSON["stringify"](_0x1585e9));
+_0x250955["indexOf"](_0x4f91d4) != -1 && (_0x1585e9["msg"] = "è¯¥èæ¬ä¸å¤©è¿è¡æ¬¡æ°è¿å¤ãè¯·ä½¿ç¨å«ççº¿è·¯æèéä¸å¤©åæ¥ð", _0x35d2d1 = JSON["stringify"](_0x1585e9));
+const _0x136176 = {
+  "body": _0x35d2d1
 };
-$done(_0x50d395);
+$done(_0x136176);
