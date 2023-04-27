@@ -37,19 +37,17 @@ const URI6 = "vip/v1/recommand";
 const URI7 = "/track/v3/baseInfo";
 const URI8 = "/product/detail/v1/module/data/dynamic";
 const URI9 = "/product/detail/v1/basicInfo/dynamic/ts";
-Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, "\"sampleDuration\":99999")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"text":"[^"]+/g, "\"text\":\"âï¸èæ¬ç±ä¼äººåè´¹æä¾!è¯·ç¹å»æ­¤å¤è·åææ°JSãå½åæ¯02æ¯å·çº¿è·¯â¤ï¸")["replace"](/"isAuthorized":\w+/g, "\"isAuthorized\":true")["replace"](/"url":"[^"]+/g, "\"url\":\"https://t.me/WeiRenQAQ/163"));
+Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, "\"sampleDuration\":99999")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"text":"[^"]+/g, "\"text\":\"âï¸èæ¬ç±ä¼äººåè´¹æä¾!è¯·ç¹å»æ­¤å¤è·åææ°JSãå½åæ¯02æ¯å·çº¿è·¯â¤ï¸")["replace"](/"isAuthorized":\w+/g, "\"isAuthorized\":true")["replace"](/"url":"[^"]+/g, "\"url\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
 Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isAuthorized":\w+/g, "\"isSample\":true"));
-Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true")["replace"](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"ç¹å»æ·»å ä½èTGé¢é")["replace"](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/WeiRenQAQ"));
-Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, "\"buttonContent\\\":\\\"â¤ï¸â¤ï¸ç¹å»æ·»å ä½èTGé¢éâ¤ï¸â¤ï¸\\")["replace"](/"url\\":\\"[^"]+/g, "\"url\\\":\\\"https://t.me/WeiRenQAQ\\")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true"));
+Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true")["replace"](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"ç¹å»æ·»å ä½èTGé¢é")["replace"](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
+Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, "\"buttonContent\\\":\\\"点击关注作者GitHub\\")["replace"](/"url\\":\\"[^"]+/g, "\"url\\\":\\\"https://t.me/WeiRenQAQ\\")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true"));
 Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, "nickName\":\"三坊七巷")["replace"](/vipStatus":\d/g, "vipStatus\":2")["replace"](/subtitle":"[^"]+/g, "subtitle\":\"2999-09-09åè´¹æä¾ç¦æ­¢è´©å")["replace"](/userLevelIcon":"[^"]+/g, "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png")["replace"](/userLogoPic":"[^"]+/g, "userLogoPic\":\"https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg"));
 
 var User = JSON["parse"](Body);
 
 if (Url["indexOf"](URI4) != -1) {
-    const _0x1805c1 = "1|0|2|3|4"["split"]("|");
 
-    let _0x5e34e1 = 0;
-    User["data"]["behaviors"][0]["action"]["url"] = "https://t.me/WeiRenQAQ/163";
+    User["data"]["behaviors"][0]["action"]["url"] = "https://t.me/+gcEcUFPzQ2g5NTg9";
     User["data"]["behaviors"][0]["vipPurchaseText"] = "ç¹å»æ·»å ä½èTGé¢é";
     User["data"]["behaviors"][0]["labelSubTitle"] = "æ·»å é¢éè·åææ°èæ¬ç»§ç»­çå¬ï¼ð";
     User["data"]["behaviors"][0]["labelText"] = "è¯¥èæ¬å·²å¤±æ";
@@ -57,9 +55,6 @@ if (Url["indexOf"](URI4) != -1) {
 }
 
 if (Url["indexOf"](URI5) != -1) {
-    const _0x2ce4a3 = "10|5|2|9|0|7|4|6|1|8|3|11"["split"]("|");
-
-    let _0x2b6f74 = 0;
     User["data"]["nickname"] = "三坊七巷";
     User["data"]["isVip"] = true;
     User["data"]["vipExpireTime"] = 32493834549000;
