@@ -50,10 +50,10 @@ if (Url["indexOf"](URI4) != -1) {
     const _0x4a0323 = "2|4|0|1|3"["split"]("|");
 
     let _0x2d827e = 0;
-    UserBody["data"][List[31]][0][List[30]][List[1]] = List[33];
-    UserBody["data"][List[31]][0][List[34]] = List[35];
-    UserBody["data"][List[31]][0][List[36]] = List[37];
-    UserBody["data"][List[31]][0][List[38]] = List[39];
+    UserBody["data"]["behaviors"][0]["action"]["url"] = "https://t.me/WeiRenQAQ/163";
+    UserBody["data"]["behaviors"][0]["vipPurchaseText"] = "暂无更多信息";
+    UserBody["data"]["behaviors"][0]["labelSubTitle"] = "暂无更多信息";
+    UserBody["data"]["behaviors"][0]["labelText"] = "暂无更多信息";
     Body = JSON[List[40]](UserBody);
 }
 
