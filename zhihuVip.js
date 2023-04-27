@@ -26,7 +26,7 @@ const URI1 = "people/self";
 const URI2 = "drac_ym/og/detimilnu"["split"]('')["reverse"]()["join"]('');
 const URI3 = "sku/reversion_sku_ext";
 
-url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"]);
+url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))(/is_vip":\w+/g, "is_vip\":true"));
 
 
 const Json_body = {
