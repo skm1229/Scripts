@@ -38,45 +38,45 @@ const URI6 = "vip/v1/recommand";
 const URI7 = "/track/v3/baseInfo";
 const URI8 = "/product/detail/v1/module/data/dynamic";
 const URI9 = "/product/detail/v1/basicInfo/dynamic/ts";
-Url[List[11]](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, List[17])["replace"](/"isFree":\w+/g, List[16])["replace"](/"text":"[^"]+/g, List[15])["replace"](/"isAuthorized":\w+/g, List[14])["replace"](/"url":"[^"]+/g, List[12]));
-Url[List[11]](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isAuthorized":\w+/g, List[18]));
-Url[List[11]](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18])["replace"](/"vipPurchaseText":"[^"]+/g, List[21])["replace"](/"vipPurchaseUrl":"[^"]+/g, List[20]));
-Url[List[11]](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, List[23])["replace"](/"url\\":\\"[^"]+/g, List[22])["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18]));
-Url[List[11]](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, List[28])["replace"](/vipStatus":\d/g, List[27])["replace"](/subtitle":"[^"]+/g, List[26])["replace"](/userLevelIcon":"[^"]+/g, List[25])["replace"](/userLogoPic":"[^"]+/g, List[24]));
+Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, List[17])["replace"](/"isFree":\w+/g, List[16])["replace"](/"text":"[^"]+/g, List[15])["replace"](/"isAuthorized":\w+/g, List[14])["replace"](/"url":"[^"]+/g, List[12]));
+Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isAuthorized":\w+/g, List[18]));
+Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18])["replace"](/"vipPurchaseText":"[^"]+/g, List[21])["replace"](/"vipPurchaseUrl":"[^"]+/g, List[20]));
+Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, List[23])["replace"](/"url\\":\\"[^"]+/g, List[22])["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18]));
+Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, List[28])["replace"](/vipStatus":\d/g, List[27])["replace"](/subtitle":"[^"]+/g, List[26])["replace"](/userLevelIcon":"[^"]+/g, List[25])["replace"](/userLogoPic":"[^"]+/g, List[24]));
 
-var _0x2e9115 = JSON[List[29]](Body);
+var UserBody = JSON[List[29]](Body);
 
-if (Url[List[11]](URI4) != -1) {
+if (Url["indexOf"](URI4) != -1) {
     const _0x4a0323 = "2|4|0|1|3"["split"]("|");
 
     let _0x2d827e = 0;
-    _0x2e9115[List[32]][List[31]][0][List[30]][List[1]] = List[33];
-    _0x2e9115[List[32]][List[31]][0][List[34]] = List[35];
-    _0x2e9115[List[32]][List[31]][0][List[36]] = List[37];
-    _0x2e9115[List[32]][List[31]][0][List[38]] = List[39];
-    Body = JSON[List[40]](_0x2e9115);
+    UserBody["data"][List[31]][0][List[30]][List[1]] = List[33];
+    UserBody["data"][List[31]][0][List[34]] = List[35];
+    UserBody["data"][List[31]][0][List[36]] = List[37];
+    UserBody["data"][List[31]][0][List[38]] = List[39];
+    Body = JSON[List[40]](UserBody);
 }
 
-if (Url[List[11]](URI5) != -1) {
+if (Url["indexOf"](URI5) != -1) {
     const _0x4573f8 = "9|10|1|11|2|3|6|7|0|8|4|5"["split"]("|");
 
     let _0x366a73 = 0;
-    _0x2e9115[List[32]][List[41]] = List[42];
-    _0x2e9115[List[32]][List[43]] = true;
-    _0x2e9115[List[32]][List[44]] = 32493834549000;
-    _0x2e9115[List[32]][List[45]] = 2;
-    _0x2e9115[List[32]][List[46]] = 5;
-    _0x2e9115[List[32]][List[47]][List[43]] = true;
-    _0x2e9115[List[32]][List[48]][List[43]] = true;
-    _0x2e9115[List[32]][List[48]][List[49]] = 5;
-    _0x2e9115[List[32]][List[50]] = List[51];
-    _0x2e9115[List[32]][List[52]] = List[51];
-    _0x2e9115[List[32]][List[53]] = List[51];
-    Body = JSON[List[40]](_0x2e9115);
+    UserBody["data"][List[41]] = List[42];
+    UserBody["data"][List[43]] = true;
+    UserBody["data"][List[44]] = 32493834549000;
+    UserBody["data"][List[45]] = 2;
+    UserBody["data"][List[46]] = 5;
+    UserBody["data"][List[47]][List[43]] = true;
+    UserBody["data"][List[48]][List[43]] = true;
+    UserBody["data"][List[48]][List[49]] = 5;
+    UserBody["data"][List[50]] = List[51];
+    UserBody["data"][List[52]] = List[51];
+    UserBody["data"][List[53]] = List[51];
+    Body = JSON[List[40]](UserBody);
 }
 
-Url[List[11]](URI6) != -1 && (delete _0x2e9115[List[32]][List[54]], _0x2e9115[List[32]][List[45]] = 2, _0x2e9115[List[32]][List[55]] = List[42], Body = JSON[List[40]](_0x2e9115));
-Url[List[11]](URI7) != -1 && (_0x2e9115[List[56]] = List[57], Body = JSON[List[40]](_0x2e9115));
+Url["indexOf"](URI6) != -1 && (delete UserBody["data"][List[54]], UserBody["data"][List[45]] = 2, UserBody["data"][List[55]] = List[42], Body = JSON[List[40]](UserBody));
+Url["indexOf"](URI7) != -1 && (UserBody[List[56]] = List[57], Body = JSON[List[40]](UserBody));
 const _0x50d395 = {
     "body": Body
 };
