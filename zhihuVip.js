@@ -28,6 +28,16 @@ const URI3 = "sku/reversion_sku_ext";
 
 url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"Skm_1229")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \"https://picx.zhimg.com/100/v2-802fd7817df46f9ea1a962f4a328566b_xl.jpg?source=32738c0c"));
 
+var Jump_butoon_text = JSON["parse"](body);
+
+if (url["indexOf"](URI3) != -1) {
+    Jump_butoon_text["data"]["center"]["buttons"][1]["sub_text"] = "暂无"["split"]('')["reverse"]()["join"]('');
+    Jump_butoon_text["data"]["center"]["buttons"][1]["link_url"] = "https://raw.githubusercontent.com/skm1229/Scripts/main/zhihuVip.js";
+    Jump_butoon_text["data"]["center"]["buttons"][1]["button_text"] = "暂无"["split"]('')["reverse"]()["join"]('');
+    Jump_butoon_text["data"]["bottom"]["buttons"][1]["button_text"] = "暂无";
+    delete Jump_butoon_text["data"]["center"]["buttons"][0]["sub_text"];
+    body = JSON["stringify"](Jump_butoon_text);
+}
 
 const Json_body = {
     "body": body
