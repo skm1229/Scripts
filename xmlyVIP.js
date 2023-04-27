@@ -41,7 +41,7 @@ const URI9 = "/product/detail/v1/basicInfo/dynamic/ts";
 
 Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, "\"sampleDuration\":99999")["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"text":"[^"]+/g, List[15])["replace"](/"isAuthorized":\w+/g, "\"isAuthorized\":true")["replace"](/"url":"[^"]+/g, "\"url\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
 Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isAuthorized":\w+/g, "\"isSample\":true"));
-Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true")["replace"](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"ç¹å»æ·»å ä½èTGé¢é")["replace"](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
+Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true")["replace"](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"查看作者GitHub")["replace"](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
 Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, "\"buttonContent\\\":\\\"关注作者GitHub\\")["replace"](/"url\\":\\"[^"]+/g, List[22])["replace"](/"isFree":\w+/g, "\"isFree\":true")["replace"](/"isPaid":\w+/g, "\"isPaid\":false")["replace"](/"isSample":\w+/g, "\"isAuthorized\":true")["replace"](/"isSample":\w+/g, "\"isSample\":true"));
 Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, "nickName\":\"三坊七巷")["replace"](/vipStatus":\d/g, "vipStatus\":2")["replace"](/subtitle":"[^"]+/g, "subtitle\":\"2999-09-09åè´¹æä¾ç¦æ­¢è´©å")["replace"](/userLevelIcon":"[^"]+/g, "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png")["replace"](/userLogoPic":"[^"]+/g, "userLogoPic\":\""));
 
@@ -52,9 +52,9 @@ if (Url["indexOf"](URI4) != -1) {
 
     let _0x2d827e = 0;
     UserBody["data"]["behaviors"][0]["action"]["url"] = "https://t.me/+gcEcUFPzQ2g5NTg9";
-    UserBody["data"]["behaviors"][0]["vipPurchaseText"] = "暂无更多信息";
-    UserBody["data"]["behaviors"][0]["labelSubTitle"] = "添加连接";
-    UserBody["data"]["behaviors"][0]["labelText"] = "查看作者GitHub";
+    UserBody["data"]["behaviors"][0]["vipPurchaseText"] = "查看作者GitHub";
+    UserBody["data"]["behaviors"][0]["labelSubTitle"] = "暂无更多信息";
+    UserBody["data"]["behaviors"][0]["labelText"] = "QAQ";
     Body = JSON["stringify"](UserBody);
 }
 
