@@ -25,8 +25,18 @@ hostname = *1*1*,www.zhihu.com,zhuanlan.zhihu.com,api.zhihu.com,api.zhihu.com,18
 var Body = $response["Body"];
 var Url = $request["Url"];
 const URI1 = "people/self";
+const URI2 = "drac_ym/og/detimilnu"["split"]('')["reverse"]()["join"]('');
+const URI3 = "sku/reversion_sku_ext";
 
-Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_Url":"[^"]+/g, "\"avatar_Url\": \""));
+url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \""));
+if (url["indexOf"](URI3) != -1) {
+    Jump_butoon_text["data"]["center"]["buttons"][1]["sub_text"] = ""["split"]('')["reverse"]()["join"]('');
+    Jump_butoon_text["data"]["center"]["buttons"][1]["link_url"] = "";
+    Jump_butoon_text["data"]["center"]["buttons"][1]["button_text"] = ""["split"]('')["reverse"]()["join"]('');
+    Jump_butoon_text["data"]["bottom"]["buttons"][1]["button_text"] = "";
+    delete Jump_butoon_text["data"]["center"]["buttons"][0]["sub_text"];
+    body = JSON["stringify"](Jump_butoon_text);
+}
 
 const Json_body = {
     "body": body
