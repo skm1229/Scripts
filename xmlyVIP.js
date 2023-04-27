@@ -75,9 +75,9 @@ if (Url["indexOf"](URI5) != -1) {
     Body = JSON["stringify"](UserBody);
 }
 
-Url["indexOf"](URI6) != -1 && (delete UserBody["data"][List[54]], UserBody["data"]["vipStatus"] = 2, UserBody["data"][List[55]] = List[42], Body = JSON["stringify"](UserBody));
-Url["indexOf"](URI7) != -1 && (UserBody[List[56]] = List[57], Body = JSON["stringify"](UserBody));
-const _0x50d395 = {
+Url["indexOf"](URI6) != -1 && (delete UserBody["data"]["modules"], UserBody["data"]["vipStatus"] = 2, UserBody["data"]["nickName"] = List[42], Body = JSON["stringify"](UserBody));
+Url["indexOf"](URI7) != -1 && (UserBody["msg"] = "nothing", Body = JSON["stringify"](UserBody));
+const Json_body = {
     "body": Body
 };
-$done(_0x50d395);
+$done(Json_body);
