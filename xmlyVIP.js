@@ -26,58 +26,61 @@ author:   Skm_1229
 hostname = 180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com
 
 ************************/
-var List = ["body", "url", "/mobile-playpage/playpage/tabs", "v1/album/track/ts", "business-vip-presale-mobile-web/page/ts", "/product/promotion/v1/album/price/ts", "mobile-user/v2/homePage/", "vip/v1/recommand", "/track/v3/baseInfo", "/product/detail/v1/module/data/dynamic", "/product/detail/v1/basicInfo/dynamic/ts", "indexOf", "\"url\":\"https://t.me/WeiRenQAQ/163", "replace", "\"isAuthorized\":true", "\"text\":\"âï¸èæ¬ç±ä¼äººåè´¹æä¾!è¯·ç¹å»æ­¤å¤è·åææ°JSãå½åæ¯SVIP2çº¿è·¯â¤ï¸", "\"isFree\":true", "\"sampleDuration\":99999", "\"isSample\":true", "\"isPaid\":false", "\"vipPurchaseUrl\":\"https://t.me/WeiRenQAQ", "\"vipPurchaseText\":\"ç¹å»æ·»å ä½èTGé¢é", "\"url\\\":\\\"https://t.me/WeiRenQAQ\\", "\"buttonContent\\\":\\\"â¤ï¸â¤ï¸ç¹å»æ·»å ä½èTGé¢éâ¤ï¸â¤ï¸\\", "userLogoPic\":\"https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg", "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png", "subtitle\":\"2999-09-09åè´¹æä¾ç¦æ­¢è´©å", "vipStatus\":2", "nickName\":\"by~ä¼äºº", "parse", "action", "behaviors", "data", "https://t.me/WeiRenQAQ/163", "vipPurchaseText", "ç¹å»æ·»å ä½èTGé¢é", "labelSubTitle", "æ·»å é¢éè·åææ°èæ¬ç»§ç»­çå¬ï¼ð", "labelText", "è¯¥èæ¬å·²å¤±æ", "stringify", "nickname", "by~ä¼äºº", "isVip", "vipExpireTime", "vipStatus", "vipLevel", "anchorVipInfo", "vipInfo", "level", "mobileLargeLogo", "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg", "mobileSmallLogo", "mobileMiddleLogo", "modules", "nickName", "msg", "è¯¥èæ¬ä¸å¤©è¿è¡æ¬¡æ°è¿å¤ãè¯·ä½¿ç¨å«ççº¿è·¯æèéä¸å¤©åæ¥ð"];
+var List = ["body", "url",
+    "/mobile-playpage/playpage/tabs",
+    "v1/album/track/ts",
+    "business-vip-presale-mobile-web/page/ts",
+    "/product/promotion/v1/album/price/ts",
+    "mobile-user/v2/homePage/",
+    "vip/v1/recommand",
+    "/track/v3/baseInfo",
+    "/product/detail/v1/module/data/dynamic",
+    "/product/detail/v1/basicInfo/dynamic/ts"];
 var Body = $response["body"];
 var Url = $request["url"];
-const URI1 = "/mobile-playpage/playpage/tabs";
-const URI2 = "v1/album/track/ts";
-const URI3 = "business-vip-presale-mobile-web/page/ts";
-const URI4 = "/product/promotion/v1/album/price/ts";
-const URI5 = "mobile-user/v2/homePage/";
-const URI6 = "vip/v1/recommand";
-const URI7 = "/track/v3/baseInfo";
-const URI8 = "/product/detail/v1/module/data/dynamic";
-const URI9 = "/product/detail/v1/basicInfo/dynamic/ts";
-Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, List[17])["replace"](/"isFree":\w+/g, List[16])["replace"](/"text":"[^"]+/g, List[15])["replace"](/"isAuthorized":\w+/g, List[14])["replace"](/"url":"[^"]+/g, List[12]));
-Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isAuthorized":\w+/g, List[18]));
-Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18])["replace"](/"vipPurchaseText":"[^"]+/g, List[21])["replace"](/"vipPurchaseUrl":"[^"]+/g, List[20]));
-Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, List[23])["replace"](/"url\\":\\"[^"]+/g, List[22])["replace"](/"isFree":\w+/g, List[16])["replace"](/"isPaid":\w+/g, List[19])["replace"](/"isSample":\w+/g, List[14])["replace"](/"isSample":\w+/g, List[18]));
-Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, List[28])["replace"](/vipStatus":\d/g, List[27])["replace"](/subtitle":"[^"]+/g, List[26])["replace"](/userLevelIcon":"[^"]+/g, List[25])["replace"](/userLogoPic":"[^"]+/g, List[24]));
+const URI1 = List[2];
+const URI2 = List[3];
+const URI3 = List[4];
+const URI4 = List[5];
+const URI5 = List[6];
+const URI6 = List[7];
+const URI7 = List[8];
+const URI8 = List[9];
+const URI9 = List[10];
+Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/"sampleDuration":\d/g, "\"sampleDuration\":99999")[replace](/"isFree":\w+/g, "\"isFree\":true")[replace](/"text":"[^"]+/g, "\"text\":\"SVIP通道",)[replace](/"isAuthorized":\w+/g, "\"isAuthorized\":true")[replace](/"url":"[^"]+/g, "\"url\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
+Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")[replace](/"isPaid":\w+/g, "\"isPaid\":false")[replace](/"isSample":\w+/g, "\"isAuthorized\":true")[replace](/"isAuthorized":\w+/g, "\"isSample\":true"));
+Url["indexOf"](URI8) != -1 && (Body = Body["replace"](/"isFree":\w+/g, "\"isFree\":true")[replace](/"isPaid":\w+/g, "\"isPaid\":false")[replace](/"isSample":\w+/g, "\"isAuthorized\":true")[replace](/"isSample":\w+/g, "\"isSample\":true")[replace](/"vipPurchaseText":"[^"]+/g, "\"vipPurchaseText\":\"暂无")[replace](/"vipPurchaseUrl":"[^"]+/g, "\"vipPurchaseUrl\":\"https://t.me/+gcEcUFPzQ2g5NTg9"));
+Url["indexOf"](URI9) != -1 && (Body = Body["replace"](/"buttonContent\\":\\"[^"]+/g, "\"buttonContent\\\":\\\"点击跳转\\")[replace](/"url\\":\\"[^"]+/g, "\"url\\\":\\\"https://t.me/+gcEcUFPzQ2g5NTg9\\")[replace](/"isFree":\w+/g, "\"isFree\":true")[replace](/"isPaid":\w+/g, "\"isPaid\":false")[replace](/"isSample":\w+/g, "\"isAuthorized\":true")[replace](/"isSample":\w+/g, "\"isSample\":true"));
+Url["indexOf"](URI3) != -1 && (Body = Body["replace"](/nickName":"[^"]+/g, "nickName\":\"三坊七巷")[replace](/vipStatus":\d/g, "vipStatus\":2")[replace](/subtitle":"[^"]+/g, "subtitle\":\"2999-09-09年")[replace](/userLevelIcon":"[^"]+/g, "userLevelIcon\":\"http://imagev2.xmcdn.com/group87/M09/0A/4E/wKg5IV8Pwjmw5My3AAASYbQa39Y768.png")[replace](/userLogoPic":"[^"]+/g, "userLogoPic\":\""));
 
-var UserBody = JSON[List[29]](Body);
+var User = JSON[parse](Body);
 
-if (Url["indexOf"](URI4) != -1) {
-    const _0x4a0323 = "2|4|0|1|3"["split"]("|");
-
-    let _0x2d827e = 0;
-    UserBody["data"][List[31]][0][List[30]][List[1]] = List[33];
-    UserBody["data"][List[31]][0][List[34]] = List[35];
-    UserBody["data"][List[31]][0][List[36]] = List[37];
-    UserBody["data"][List[31]][0][List[38]] = List[39];
-    Body = JSON[List[40]](UserBody);
+if (Url[indexOf](URI4) != -1) {
+    User["data"]["behaviors"][0]["action"][url] = "https://t.me/+gcEcUFPzQ2g5NTg9";
+    User["data"]["behaviors"][0]["vipPurchaseText"] = "暂无更多详细信息";
+    User["data"]["behaviors"][0]["labelSubTitle"] = "暂无更多详细信息";
+    User["data"]["behaviors"][0]["labelText"] = "暂无更多详细信息";
+    Body = JSON[stringify](User);
 }
 
 if (Url["indexOf"](URI5) != -1) {
-    const _0x4573f8 = "9|10|1|11|2|3|6|7|0|8|4|5"["split"]("|");
-
-    let _0x366a73 = 0;
-    UserBody["data"][List[41]] = List[42];
-    UserBody["data"][List[43]] = true;
-    UserBody["data"][List[44]] = 32493834549000;
-    UserBody["data"][List[45]] = 2;
-    UserBody["data"][List[46]] = 5;
-    UserBody["data"][List[47]][List[43]] = true;
-    UserBody["data"][List[48]][List[43]] = true;
-    UserBody["data"][List[48]][List[49]] = 5;
-    UserBody["data"][List[50]] = List[51];
-    UserBody["data"][List[52]] = List[51];
-    UserBody["data"][List[53]] = List[51];
-    Body = JSON[List[40]](UserBody);
+    User["data"]["nickname"] = "三坊七巷";
+    User["data"]["isVip"] = true;
+    User["data"]["vipExpireTime"] = 32493834549000;
+    User["data"]["vipStatus"] = 2;
+    User["data"]["vipLevel"] = 5;
+    User["data"]["anchorVipInfo"]["isVip"] = true;
+    User["data"]["vipInfo"]["isVip"] = true;
+    User["data"]["vipInfo"]["level"] = 5;
+    User["data"]["mobileLargeLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+    User["data"]["mobileSmallLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+    User["data"]["mobileMiddleLogo"] = "https://static.jietushuiyin.com/uploads/20230204/452be787cb7d63972965498fbf23666d.jpg";
+    Body = JSON["stringify"](User);
 }
 
-Url["indexOf"](URI6) != -1 && (delete UserBody["data"][List[54]], UserBody["data"][List[45]] = 2, UserBody["data"][List[55]] = List[42], Body = JSON[List[40]](UserBody));
-Url["indexOf"](URI7) != -1 && (UserBody[List[56]] = List[57], Body = JSON[List[40]](UserBody));
-const _0x50d395 = {
+Url["indexOf"](URI6) != -1 && (delete User["data"]["modules"], User["data"]["vipStatus"] = 2, User["data"]["nickName"] = "三坊七巷", Body = JSON["stringify"](User));
+Url["indexOf"](URI7) != -1 && (User["msg"] = "暂无更多详细信息", Body = JSON["stringify"](User));
+const Json_body = {
     "body": Body
 };
-$done(_0x50d395);
+$done(Json_body);
