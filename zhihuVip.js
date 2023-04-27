@@ -26,7 +26,7 @@ const URI1 = "people/self";
 const URI2 = "drac_ym/og/detimilnu"["split"]('')["reverse"]()["join"]('');
 const URI3 = "sku/reversion_sku_ext";
 
-url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"Skm_1229")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \"https://pic1.zhimg.com/v2-802fd7817df46f9ea1a962f4a328566b_l.jpg?source=32738c0c"));
+url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"Skm_1229")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \"https://pic1.zhimg.com/v2-802fd7817df46f9ea1a962f4a328566b_l.jpg"));
 
 
 const Json_body = {
