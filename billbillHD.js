@@ -1,12 +1,6 @@
 /**************************************
 function：billbill画质解锁
 author:   skm_1229
-
-     user['data']['name'] = 'skm_1229';
-     user['data']['coin'] = 999880;
-     user['data']['bcoin'] = 999880;
-     user['data']['face'] = ' /2021/11/09/00/23/e8374efaeeaa36fe6004e73490e13b118606eac1.jpg';
-     user['data']['level'] = 6;
 **************************************
 [rewrite_local]
 ^http[s]?:\/\/.+bilibili.+((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)).*$ url script-response-body https://raw.githubusercontent.com//skm1229/scripts/main/billbillHD.js
