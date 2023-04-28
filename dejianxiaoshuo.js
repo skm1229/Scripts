@@ -33,9 +33,4 @@ Body.body.userInfo.vipInfo = {
 };
 
 
-const Json_body = {
-    "body": Body
-};
-
-$done(Json_body);
-
+$done({ body: JSON.stringify(Body) });
