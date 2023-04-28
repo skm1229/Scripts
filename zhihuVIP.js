@@ -27,7 +27,7 @@ const URI2 = "drac_ym/og/detimilnu"["split"]('')["reverse"]()["join"]('');
 const URI3 = "sku/reversion_sku_ext";
 
 url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"Skm_1229")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \"https://picx.zhimg.com/100/v2-802fd7817df46f9ea1a962f4a328566b_xl.jpg?source=32738c0c"));
-url["indexOf"](URI2) != -1 && (body = body["replace"](/jump_url":"[^"]+/g, "https://github.com/skm1229/Scripts":\"lru_pmuj"["split"]('')["reverse"]()["join"](''))["replace"](/"button_text":"[^"]+/g, "关注作者GitHub\":\"txet_nottub\""["split"]('')["reverse"]()["join"](''))["replace"](/"title":"[^"]+/g, "\"title\": \"2999-09-09 到期")["replace"](/songNeedPay":\d/g, "0:\"yaPdeeNgnos"["split"]('')["reverse"]()["join"]('')));
+url["indexOf"](URI2) != -1 && (body = body["replace"](/jump_url":"[^"]+/g, "QAQneRieW/em.t//:sptth\":\"lru_pmuj"["split"]('')["reverse"]()["join"](''))["replace"](/"button_text":"[^"]+/g, "éé¢GTèä½å æ·»å»ç¹\":\"txet_nottub\""["split"]('')["reverse"]()["join"](''))["replace"](/"title":"[^"]+/g, "\"title\": \"2999-09-09年")["replace"](/songNeedPay":\d/g, "0:\"yaPdeeNgnos"["split"]('')["reverse"]()["join"]('')));
 const Json_body = {
     "body": body
 };
