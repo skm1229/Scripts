@@ -22,19 +22,20 @@ Body.body.userInfo.unlockVipInfo = {
     "expireDate": "2099-09-09"
 };
 Body.body.userInfo.vipInfo = {
+    "content": "点击进入购买会员",
     "vipType": 1,
-    "vipExpire": 4092599349,
     "expireDate": "2099-09-09",
     "halfScreen": "https://dj.palmestore.com/zytc/public/index.php?ca=FreeVip.Index&source=book",
     "expireDateNew": "2099-09-09",
     "description": "开通会员",
-    "content": "点击进入购买会员",
-    "fullScreen": "https://dj.palmestore.com/zytc/public/index.php?ca=FreeVip.Index&showContentInStatusBar=1&source=mine"
-
+    "fullScreen": "https://dj.palmestore.com/zytc/public/index.php?ca=FreeVip.Index&showContentInStatusBar=1&source=mine",
+    "vipExpire": 4092599349
 };
+
 
 const Json_body = {
     "body": Body
 };
 
 $done(Json_body);
+
