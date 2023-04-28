@@ -31,6 +31,8 @@ Body.body.userInfo.vipInfo = {
     "fullScreen": "https://dj.palmestore.com/zytc/public/index.php?ca=FreeVip.Index&showContentInStatusBar=1&source=mine",
     "vipExpire": 4092599349
 };
+const Json_body = {
+    "body": Body.body
+}
 
-
-$done({ body: JSON.stringify(Body) });
+$done(Json_body);
