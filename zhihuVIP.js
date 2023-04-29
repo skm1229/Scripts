@@ -21,15 +21,31 @@ hostname = ww.zhihu.com,zhuanlan.zhihu.com,api.zhihu.com,api.zhihu.com,183.204.1
 ^http[s]?:\/\/api\.zhihu\.com\/(people\/self|unlimited\/go\/my_card|sku\/reversion_sku_ext).*$ url script-response-body https://raw.githubusercontent.com/skm1229/Scripts/main/zhihuVIP.js
 ^http[s]?:\/\/.*zhihu\.(com|cn)\/(appview\/v2\/answer|remix-web\/paid_columns|km_player\/album|market\/paid_column|appview\/p|api\/v3\/books|books|market\/paid_magazine).*$ url script-request-header https://raw.githubusercontent.com/skm1229/Scripts/main/zhihuToken.js
 ***************************************/
-var Body = $response["Body"];
-var Url = $request["Url"];
+var Body = $response["body"];
+var Url = $request["url"];
+
 const URI1 = "people/self";
-const URI2 = "drac_ym/og/detimilnu"["split"]('')["reverse"]()["join"]('');
+const URI2 = "unlimited/go/my_card";
 const URI3 = "sku/reversion_sku_ext";
 
-url["indexOf"](URI1) != -1 && (body = body["replace"](/vip_type":\d/g, "1:\"epyt_piv"["split"]('')["reverse"]()["join"](''))["replace"](/name":"[^"]+/g, "name\":\"Skm_1229")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"](/"avatar_url":"[^"]+/g, "\"avatar_url\": \"https://pic1.zhimg.com/v2-802fd7817df46f9ea1a962f4a328566b_l.jpg?source=32738c0c"));
+
+Url["indexOf"](URI1) != -1 && (Body = Body["replace"](/vip_type":\d/g, "\"vip_type\":1")["replace"](/is_vip":\w+/g, "is_vip\":true")["replace"]);
+Url["indexOf"](URI2) != -1 && (Body = Body["replace"](/jump_url":"[^"]+/g, "\"jump_url\":https://github.com/skm1229/Scripts")["replace"](/"button_text":"[^"]+/g, "\"button_text\":\"查看作者GitHUb\"")["replace"](/"title":"[^"]+/g, "\"title\": \"2999-09-09到期")["replace"](/songNeedPay":\d/g, "songNeedPay\":0"));
+
+var Skm_1229 = JSON["parse"](Body);
+
+if (Url["indexOf"](URI3) != -1) {
+    Skm_1229["data"]["center"]["buttons"][1]["sub_text"] = "暂无";
+    Skm_1229["data"]["center"]["buttons"][1]["link_url"] = "https://github.com/skm1229/Scripts";
+    Skm_1229["data"]["center"]["buttons"][1]["button_text"] = "关注作者GitHub";
+    Skm_1229["data"]["bottom"]["buttons"][1]["button_text"] = "关注作者GitHub";
+    delete Skm_1229["data"]["center"]["buttons"][0]["sub_text"];
+    Body = JSON["stringify"](Skm_1229);
+}
 
 const Json_body = {
-    "body": body
+    "body": Body
 };
+
 $done(Json_body);
+
