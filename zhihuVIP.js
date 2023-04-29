@@ -2,7 +2,7 @@
 
 function：      知乎 盐故事+知识+书刊+去部分广告
 author:         Skm_1229、
-app_version:    9.10
+app_version:    9.1.0
 version:        1.1V
 
 **************************************
