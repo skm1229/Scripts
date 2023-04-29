@@ -32,17 +32,6 @@ url["indexOf"](URI2) != -1 && (body = body["replace"](/jump_url":"[^"]+/g, "\"ju
 
 var Jump_butoon_text = JSON["parse"](body);
 
-if (url["indexOf"](URI3) != -1) {
-
-
-    Jump_butoon_text["data"]["center"]["buttons"][1]["sub_text"] = "关注作者GitHub";
-    Jump_butoon_text["data"]["center"]["buttons"][1]["link_url"] = "https://raw.githubusercontent.com/skm1229/Scripts/main/zhihuVip.js";
-    Jump_butoon_text["data"]["center"]["buttons"][1]["button_text"] = "关注作者GitHub";
-    Jump_butoon_text["data"]["bottom"]["buttons"][1]["button_text"] = "关注作者GitHub";
-    delete Jump_butoon_text["data"]["center"]["buttons"][0]["sub_text"];
-    body = JSON["stringify"](Jump_butoon_text);
-}
-
 const Json_body = {
     "body": body
 };
