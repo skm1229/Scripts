@@ -59,9 +59,7 @@ if (Url['indexOf'](URI3) != -1) {
 
 
 if (Url['indexOf'](URI4) != -1) {
-
     Skm_1229['data']['is_vip'] = true;
-    Skm_1229['data']['username'] = 'Skm_1229';
     Skm_1229['data']['expire_time'] = 32493834549000;
     Skm_1229['data']['free'] = true;
     Body = JSON['stringify'](Skm_1229);
