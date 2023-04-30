@@ -529,7 +529,6 @@ if (Url["indexOf"](URI6) != -1) {
     };
     User_Body = _0x23d019;
     Body = JSON["stringify"](User_Body);
-    $notify("该脚本已失效");
 }
 
 const Json_body = {
