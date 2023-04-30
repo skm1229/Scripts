@@ -11,7 +11,6 @@ modifiedHeaders['x-bili-fawkes-req-bin'] = '';
 modifiedHeaders['x-bili-trace-id'] = '';
 modifiedHeaders['x-bili-exps-bin'] = '';
 modifiedHeaders['x-bili-network-bin'] = '';
-$notify('改脚本已失效');
 $done({
     'headers': modifiedHeaders
 });;
