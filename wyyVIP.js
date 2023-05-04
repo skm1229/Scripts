@@ -11,6 +11,7 @@ hostname = *.music.163.com
 [rewrite_local]
 
 ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/skm1229/Scripts/main/wyyVIP.js
+
 **************************************/
 
 var Headers = $request['headers'];
