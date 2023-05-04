@@ -11,7 +11,7 @@ hostname = *.music.163.com
 [rewrite_local]
 
 ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/skm1229/Scripts/main/wyyToken.js
-^http[s]?:\/\/interface3\.music\.163\.com\/api\/mmusic-vip-membership\/cashier\/info url script-response-body https://raw.githubHeaderscontent.com/skm1229/Scripts/main/wyyVip.js
+^http[s]?:\/\/interface3\.music\.163\.com\/api\/mmusic\-vip\-membership\/cashier\/info url script-response-body https://raw.githubHeaderscontent.com/skm1229/Scripts/main/wyyVip.js
 
 **************************************/
 
