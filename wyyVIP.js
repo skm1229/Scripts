@@ -12,7 +12,7 @@ hostname = *.music.163.com
 
 ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/skm1229/Scripts/main/wyyToken.js
 ^http[s]?:\/\/((interface3\.music\.163\.com\/api\/mmusic-vip-membership\/cashier\/info)|(music\.163\.com\/weapi\/batch\?csrf_token=ae59ae3f9897880c47cb191c87616064)) url script-response-body https://raw.githubusercontent.com/skm1229/Scripts/main/wyyVIP.js
-^http[s]?:\/\/
+
 
 
 **************************************/
