@@ -16,6 +16,5 @@ hostname=bzpp2.iwzbz.com
 
 
 
-
-var msgBody={"code":-1,"data":{"vipTipsType":0,"vipLevel":3,"adtype":0,"expires":"2099-12-31 23:59:59"},"message":"","validateKey":"","isSuccess":true};
-$done({body:JSON.stringify(msgBody)});
+var skm={"code":-1,"data":{"vipTipsType":0,"vipLevel":3,"adtype":0,"expires":"2099-12-31 23:59:59"},"message":"","validateKey":"","isSuccess":true};
+$done({body:JSON.stringify(skm)});
