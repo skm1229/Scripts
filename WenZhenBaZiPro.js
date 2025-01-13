@@ -3,7 +3,7 @@ function：问真八字解锁砖石会员
 author:   skm_1229
 **************************************
 [rewrite_local]
-^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://github.com/skm1229/Scripts/WenZhenBaZiPro.js
+^https?:\/\/bzpp2\.iwzbz\.com\/api\/.*\/user\/getvipinfo url script-response-body https://github.com/skm1229/Scripts/edit/main/WenZhenBaZiPro.js
 
 [mitm] 
 hostname=bzpp2.iwzbz.com
