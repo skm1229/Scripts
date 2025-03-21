@@ -16,5 +16,5 @@ hostname=bzpp2.iwzbz.com
 
 
 
-var skm={"code":-1,"data":{"wxno2":"wzwh0307",vipLevel":3,"wxno4":"wen2021827,zhulu6020","wxno":"wen2021827","wxno3":"momo97097","expires":"2099-12-31 23:59:59"},"message":"","validateKey":"","isSuccess":true};
+var skm={"code":-1,"data":"3,砖石会员","validateKey":"","isSuccess":true};
 $done({body:JSON.stringify(skm)});
