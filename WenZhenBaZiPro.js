@@ -16,5 +16,11 @@ hostname=bzpp2.iwzbz.com
 
 
 
-var skm={"code":-1,"data":"3,砖石会员","validateKey":"","isSuccess":true};
-$done({body:JSON.stringify(skm)});
+var objc = JSON.parse($response.body);
+objc.data.adtype = 0;
+objc.data.vipLevel = 3;
+objc.data.vipTipsType = 0;
+objc.data.expires = "2999-11-28 06:06:06";
+$done({
+  body: JSON.stringify(objc)
+});
