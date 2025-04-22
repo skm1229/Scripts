@@ -14,7 +14,6 @@ hostname = *.iwzbz.com
 
 
 
-
 // 获取请求地址
 let requestUrl = $request.url;
 let status = isJSON($response.body);
